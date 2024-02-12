@@ -1,0 +1,9 @@
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\bin\Debug\ProtonBridgeTestApp.exe.config
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\bin\Debug\ProtonBridgeTestApp.exe
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\bin\Debug\ProtonBridgeTestApp.pdb
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.csprojResolveAssemblyReference.cache
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.Form1.resources
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.Properties.Resources.resources
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.csproj.GenerateResource.Cache
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.exe
+D:\Develop\C#\ProtonBridgeTestApp\ProtonBridgeTestApp\obj\Debug\ProtonBridgeTestApp.pdb
