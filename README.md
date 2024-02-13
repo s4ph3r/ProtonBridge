@@ -24,7 +24,11 @@
 1. Скачать из любого источника и установить Arduino IDE (я использовал портативную 1.8.11, скачанную https://amperka.ru/page/arduino-ide)
 2. Скачать Arduino CCLoader https://github.com/RedBearLab/CCLoader
 3. Залить в Arduino скетч CCLoader/CCLoader.ino
-4. Соединить Arduino c модулем следующим образом:
+4. Скачать "srecord-1.63-win32" из "Tools" или отсюда - http://srecord.sourceforge.net/download.html
+5. Копируем из папки "BLE-CC254x-1.5.1.1\Projects\ble\ProtonBridge\CC2541DB\CC2541\Exe" файл "ProtonBridgel.hex" в папку "srecord-1.63-win32"
+6. Используя SRecord из папки Tools запускаем "convert hex to bin.bat" (или командой "srec_cat ProtonBridge.hex -Intel -o ProtonBridge.bin -Binary")
+7. Открываем файл ProtonBridge.bin любым HEX редактором и добиваем "FF" конец файла до адреса "3FFFF" (примерно 138126 пустых байт, до итогового размера в 256кБ)
+8. Соединить Arduino c модулем следующим образом:
 - 4 порт Arduino к RESET_N модуля;
 - 5 порт Arduino к P2.2 (DebugData) модуля;
 - 6 порт Arduino к P2.1 (DebugClock) модуля;
@@ -34,14 +38,6 @@ CCLoader.exe 9 ProtonBridge.bin 0
 (9 это СОМ9, 0 это устройство по умолчанию - UNO)
 Если висит на надписи Waiting for respond from Arduino - проверить правильность подключения, нажать ctrl+c и еще раз дать команду, софт бывает тупит даже при правильном подключении.
 6. Модуль успешно прошит.
-
-
-В случае если я когда то в запарке положу вместо ProtonBridge.bin файл с расширением hex - ProtonBridge.hex, то тогда качаем SRecord отсюда "http://srecord.sourceforge.net/download.html" и командой "srec_cat ProtonBridge.hex -Intel -o ProtonBridge.bin -Binary" выполняем его конвертирование из hex в bin. И добить "FF" конец файла до адреса "3FFFF" (примерно 138126 пустых байт, до итогового размера в 256кБ).
-
-Напомню, что текущая версия без ухода в сон, соответственно жрет как свинья помои - порядка 8мА!
-В приложении под винду можно легко понять что слать модулю, на какой скорости, и в каком формате (старался оставлять подробные комментарии), писал код по быстрому, без вылизывания и прочей красоты. Как будет время накидаю описание протокола.
-
-Arduino CCLoader использован от RedBearLab, там можно найти сборку под Linux - https://github.com/RedBearLab/CCLoader.
 
 USB-UART адаптер для проверки функционала модуля нужно использовать с уровнем единицы не более 3.6В! Либо делать схему согласования уровней, схем в сети куча. Я использовал свой универсальный сдвоенный преобразователь на FT2232.
 
