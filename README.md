@@ -39,5 +39,9 @@ CCLoader.exe 9 ProtonBridge.bin 0
 Если висит на надписи Waiting for respond from Arduino - проверить правильность подключения, нажать ctrl+c и еще раз дать команду, софт бывает тупит даже при правильном подключении.
 6. Модуль успешно прошит.
 
+<img src="https://github.com/s4ph3r/ProtonBridge/blob/main/Info/Uno_flash_schematic.jpg"/>
+<img src="https://github.com/s4ph3r/ProtonBridge/blob/main/Info/ccloader.jpg"/>
+<img src="https://github.com/s4ph3r/ProtonBridge/blob/main/Info/Use_schematic.JPG"/>
+
 USB-UART адаптер для проверки функционала модуля нужно использовать с уровнем единицы не более 3.6В! Либо делать схему согласования уровней, схем в сети куча. Я использовал свой универсальный сдвоенный преобразователь на FT2232.
 
