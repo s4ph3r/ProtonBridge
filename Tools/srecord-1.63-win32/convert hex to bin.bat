@@ -1,0 +1,1 @@
+srec_cat.exe ProtonBridge.hex -Intel -o ProtonBridge.bin -Binary
